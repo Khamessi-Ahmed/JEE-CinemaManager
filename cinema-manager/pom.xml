@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+    <display-name>ProjectJEE</display-name>
+    <welcome-file-list>
+        <welcome-file>ListSalle.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description></description>
+        <display-name>ServletListSalle</display-name>
+        <servlet-name>ServletListSalle</servlet-name>
+        <servlet-class>Controller.ServletListSalle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletListSalle</servlet-name>
+        <url-pattern>/ServletListSalle</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ServletAddSalle</display-name>
+        <servlet-name>ServletAddSalle</servlet-name>
+        <servlet-class>Controller.ServletListSalle</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAddSalle</servlet-name>
+        <url-pattern>/add.php</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ServletFilm</display-name>
+        <servlet-name>ServletFilm</servlet-name>
+        <servlet-class>Controller.ServletFilm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletFilm</servlet-name>
+        <url-pattern>/ServletFilm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <description></description>
+    <display-name>ServletAddFilm</display-name>
+    <servlet-name>ServletAddFilm</servlet-name>
+    <servlet-class>Controller.ServletFilm</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>ServletAddFilm</servlet-name>
+        <url-pattern>/addFilm</url-pattern>
+    </servlet-mapping>
+</web-app>
